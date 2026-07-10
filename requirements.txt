@@ -1,0 +1,7 @@
+numpy
+pyyaml
+matplotlib
+ase>=3.22
+phonopy>=2.20
+torch>=2.0
+mace-torch
