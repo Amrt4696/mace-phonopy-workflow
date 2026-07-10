@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# NOTE: phonopy-generated files (POSCAR-0*, SPOSCAR, FORCE_SETS, band.yaml, ...)
+# are NOT globally ignored here. examples/silicon/ has its own .gitignore for
+# that (regenerated on every run). examples/bridgmanite-MgSiO3/ intentionally
+# commits those files as a verifiable, paper-referenced result.
+
+# Large model files (fetch via models/download_model.sh instead of committing)
+models/*.model
+models/*.pth
+models/*.pt
+*.model
+*.pth
+
+# OS / editor
+.DS_Store
+.vscode/
+
+# Full-eigenvector band.yaml dumps are hundreds of MB — too large for git.
+# Regenerate locally via the commands in this example's README if needed.
+examples/bridgmanite-MgSiO3/band.yaml
+examples/bridgmanite-MgSiO3/compare-dft/band_mace.yaml
+examples/bridgmanite-MgSiO3/compare-dft/band_dft.yaml

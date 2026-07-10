@@ -1,0 +1,17 @@
+name: mace-phonopy
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - phonopy>=2.20
+  - ase>=3.22
+  - numpy
+  - pyyaml
+  - matplotlib
+  - pip
+  - pip:
+      - torch>=2.0        # CPU build by default. For CUDA, install torch
+                          # separately following https://pytorch.org/get-started/locally/
+                          # BEFORE running `conda env update -f environment.yml`,
+                          # then this pip line will just confirm the existing install.
+      - mace-torch
